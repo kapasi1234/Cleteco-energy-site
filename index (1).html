@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cleteco Energy</title>
+  <link rel="icon" href="about-illustration.png">
+  <style>
+    :root {
+      --bg:#0f172a; --panel:#111827; --muted:#94a3b8; --brand:#34d399; --text:#e5e7eb;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, system-ui, Arial, sans-serif; background:var(--bg); color:var(--text); }
+    .wrap { max-width:1080px; margin:0 auto; padding:0 20px; }
+    header { border-bottom:1px solid #1f2937; background:#0b1220; position:sticky; top:0; z-index:10; }
+    .nav { display:flex; align-items:center; justify-content:space-between; padding:16px 0; }
+    .logo { display:flex; align-items:center; gap:10px; font-weight:700; color:var(--brand); }
+    .badge { font-size:12px; color:#a7f3d0; background:#065f46; border:1px solid #10b981; padding:2px 8px; border-radius:999px; }
+    .hero { display:grid; grid-template-columns:1.1fr 1fr; gap:28px; padding:48px 0; align-items:center; }
+    .hero h1 { font-size:40px; line-height:1.1; margin:0 0 12px; }
+    .hero p { color:var(--muted); font-size:18px; }
+    .cta { margin-top:18px; display:flex; gap:10px; flex-wrap:wrap; }
+    .btn { padding:12px 16px; border-radius:10px; text-decoration:none; font-weight:600; }
+    .btn.primary { background:var(--brand); color:#0b1220; }
+    .btn.ghost { border:1px solid #334155; color:var(--text); }
+    .panel { background:var(--panel); border:1px solid #1f2937; border-radius:16px; padding:18px; }
+    .hero img { width:100%; border-radius:16px; border:1px solid #1f2937; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+    section { padding:40px 0; }
+    h2 { margin:0 0 8px; font-size:28px; }
+    .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { background:#0b1220; border:1px solid #1f2937; border-radius:14px; padding:16px; }
+    footer { border-top:1px solid #1f2937; color:var(--muted); padding:28px 0; text-align:center; }
+    @media (max-width:900px) {
+      .hero { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="logo">
+        <span>⚡</span> <span>Cleteco Energy</span>
+      </div>
+      <div class="badge">Building in public · Ideation phase</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Sustainability & energy risk — simplified for SMEs.</h1>
+        <p>One integrated platform to forecast energy costs, track carbon (Scope 1, 2 & select 3), and map supplier sustainability — with compliance-ready reporting.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:hello@cleteco.energy">Join the Pilot</a>
+          <a class="btn ghost" href="#about">About Us</a>
+        </div>
+      </div>
+      <div class="panel">
+        <img src="dashboard-hero.png" alt="Cleteco dashboard preview">
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="grid-3">
+        <div class="card">
+          <h3>Energy</h3>
+          <p class="muted">Forecast costs and hedge smarter.</p>
+        </div>
+        <div class="card">
+          <h3>Carbon</h3>
+          <p class="muted">Track & report Scope 1–3 (selected).</p>
+        </div>
+        <div class="card">
+          <h3>Supply Chain</h3>
+          <p class="muted">See supplier impact & risks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:18px;align-items:center;">
+        <img src="about-illustration.png" alt="Team building a startup" style="width:100%;border-radius:12px;border:1px solid #1f2937;">
+        <div>
+          <h2>About Cleteco</h2>
+          <p style="color:var(--muted)">We’re an early‑stage startup in the ideation phase, building a unified platform for SMEs to manage energy risk, carbon reporting, and supply‑chain sustainability — co‑created with our pilot customers.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Cleteco Energy · <a href="mailto:hello@cleteco.energy" style="color:#a7f3d0;text-decoration:none;">hello@cleteco.energy</a>
+  </footer>
+</body>
+</html>
