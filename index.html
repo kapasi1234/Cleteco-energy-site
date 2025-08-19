@@ -6,18 +6,17 @@
   <title>Cleteco Energy</title>
   <link rel="icon" href="about-illustration.png">
   <style>
-    :root {
-      --bg:#0f172a; --panel:#111827; --muted:#94a3b8; --brand:#34d399; --text:#e5e7eb;
-    }
+    :root { --bg:#0f172a; --panel:#111827; --muted:#94a3b8; --brand:#34d399; --text:#e5e7eb; }
     * { box-sizing:border-box; }
-     body { margin:0; font-family:Inter, system-ui, Arial, sans-serif; background:var(--bg); color:var(--text); }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter, system-ui, Arial, sans-serif; background:var(--bg); color:var(--text); }
     .wrap { max-width:1080px; margin:0 auto; padding:0 20px; }
-     header { border-bottom:1px solid #1f2937; background:#0b1220; position:sticky; top:0; z-index:10; }
+    header { border-bottom:1px solid #1f2937; background:#0b1220; position:sticky; top:0; z-index:10; }
     .nav { display:flex; align-items:center; justify-content:space-between; padding:16px 0; }
     .logo { display:flex; align-items:center; gap:10px; font-weight:700; color:var(--brand); }
     .badge { font-size:12px; color:#a7f3d0; background:#065f46; border:1px solid #10b981; padding:2px 8px; border-radius:999px; }
     .hero { display:grid; grid-template-columns:1.1fr 1fr; gap:28px; padding:48px 0; align-items:center; }
-    .hero h1 { font-size:80px; line-height:1.1; margin:0 0 12px; }
+    .hero h1 { font-size:56px; line-height:1.1; margin:0 0 12px; }
     .hero p { color:var(--muted); font-size:18px; }
     .cta { margin-top:18px; display:flex; gap:10px; flex-wrap:wrap; }
     .btn { padding:12px 16px; border-radius:10px; text-decoration:none; font-weight:600; }
@@ -29,36 +28,32 @@
     h2 { margin:0 0 8px; font-size:28px; }
     .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
     .card { background:#0b1220; border:1px solid #1f2937; border-radius:14px; padding:16px; }
-    footer { border-top:1px solid #1f2937; color:var(--muted); padding:28px 0; text-align:center; }
-    @media (max-width:900px) {
-      .hero { grid-template-columns:1fr; }
-    }
-.avatar { width:52px; height:52px; border-radius:50%;
-background:#0b1220; border:1px solid #1f2937;
-display:flex; align-items:center; justify-content:center;
-color:#a7f3d0; font-weight:700; }
-.name { font-weight:700; }
-.role { color:#a7f3d0; font-size:14px; margin:2px 0 6px; }
-
-</style>
+    footer { border-top:1px solid #1f2937; color:#a7f3d0; padding:28px 0; text-align:center; }
+    @media (max-width:900px) { .hero { grid-template-columns:1fr; } .hero h1 { font-size:38px; } }
+  </style>
 </head>
 <body>
   <header>
     <div class="wrap nav">
-      <div class="logo">
-        <span>⚡</span> <span>Cleteco Energy</span>
-      </div>
+      <div class="logo"><span>⚡</span><span>Cleteco Energy</span></div>
+      <nav style="display:flex;gap:18px;font-size:14px;">
+        <a href="#about" style="color:#e5e7eb;text-decoration:none;">About</a>
+        <a href="#pilot" style="color:#e5e7eb;text-decoration:none;">Pilot</a>
+        <a href="#impact" style="color:#e5e7eb;text-decoration:none;">Impact</a>
+        <a href="#team" style="color:#e5e7eb;text-decoration:none;">Team</a>
+        <a href="#contact" class="btn primary" style="padding:8px 12px;">Contact</a>
+      </nav>
       <div class="badge">Building in public · Ideation phase</div>
     </div>
   </header>
 
   <main class="wrap">
+    <!-- HERO -->
     <section class="hero">
       <div>
         <h1>Sustainability & energy risk — simplified for SMEs.</h1>
         <p>One integrated platform to forecast energy costs, track carbon (Scope 1, 2 & select 3), and map supplier sustainability — with compliance-ready reporting.</p>
         <div class="cta">
-  
           <a class="btn ghost" href="#about">About Us</a>
         </div>
       </div>
@@ -66,72 +61,56 @@ color:#a7f3d0; font-weight:700; }
         <img src="dashboard-hero.png" alt="Cleteco dashboard preview">
       </div>
     </section>
+
+    <!-- PILOT CTA -->
+    <section id="pilot" class="panel" style="margin-top:0; text-align:center;">
+      <h2>Join Our Pilot</h2>
+      <p style="font-size:18px; color:#94a3b8; max-width:700px; margin:16px auto;">
+        Are you an SME in Europe struggling with <strong>high energy prices</strong>, confused about complex EU regulations like <strong>CBAM</strong> and <strong>ESG reporting</strong>, or suffering from <strong>unpredictable supply chain issues</strong>?
+      </p>
+      <p style="font-size:18px; color:#94a3b8; max-width:700px; margin:16px auto;">
+        👉 Let’s talk. Join our pilot and co-create a platform designed for your needs.
+      </p>
+      <a class="btn primary" href="mailto:kapasi1234@gmail.com">Join the Pilot</a>
     </section>
-<section class="panel" style="margin-top:40px; text-align:center;">
-  <h2>Join Our Pilot</h2>
-  <p style="font-size:18px; color:#94a3b8; max-width:700px; margin:16px auto;">
-    Are you an SME in Europe struggling with <strong>high energy prices</strong>, 
-    confused about complex EU regulations like <strong>CBAM</strong> and <strong>ESG reporting</strong>, 
-    or suffering from <strong>unpredictable supply chain issues</strong>?
-  </p>
-  <p style="font-size:18px; color:#94a3b8; max-width:700px; margin:16px auto;">
-    👉 Let’s talk. Join our pilot and co-create a platform designed for your needs.
-  </p>
-  <a class="btn primary" href="mailto:kapasi1234@gmail.com">Join the Pilot</a>
-</section>
-<section class="panel" style="margin-top:40px;">
-  <h2>Why this matters (in euros)</h2>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px;">
-    <div class="card">
-      <h3>Energy bills</h3>
-      <p style="color:#94a3b8;">
-        EU non-household electricity averaged <strong>€0.1899/kWh</strong> in H2-2024
-        (peak <strong>€0.2151</strong> in H1-2023).<br>
-        Example: 25,000 kWh/yr ≈ <strong>€4,748–€5,378</strong>.
-      </p>
-      <small style="color:#64748b;">Sources: Eurostat; EU Council report.</small>
-    </div>
 
-    <div class="card">
-      <h3>CBAM</h3>
-      <p style="color:#94a3b8;">
-        Certificates mirror the EU ETS price (€/tCO₂). Recent range:
-        <strong>~€74–€100</strong>.<br>
-        Example: 2 tCO₂/t steel ⇒ <strong>€150–€200 per tonne</strong>.
-      </p>
-      <small style="color:#64748b;">Sources: EC CBAM FAQ; World Bank.</small>
-    </div>
+    <!-- IMPACT -->
+    <section id="impact" class="panel" style="margin-top:40px;">
+      <h2>Why this matters (in euros)</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px;">
+        <div class="card">
+          <h3>Energy bills</h3>
+          <p style="color:#94a3b8;">
+            EU non-household electricity averaged <strong>€0.1899/kWh</strong> in H2-2024 (peak <strong>€0.2151</strong> in H1-2023).<br>
+            Example: 25,000 kWh/yr ≈ <strong>€4,748–€5,378</strong>.
+          </p>
+          <small style="color:#64748b;">Sources: Eurostat; EU Council report.</small>
+        </div>
+        <div class="card">
+          <h3>CBAM</h3>
+          <p style="color:#94a3b8;">
+            Certificates mirror the EU ETS price (€/tCO₂). Recent range: <strong>~€74–€100</strong>.<br>
+            Example: 2 tCO₂/t steel ⇒ <strong>€150–€200 per tonne</strong>.
+          </p>
+          <small style="color:#64748b;">Sources: EC CBAM FAQ; World Bank.</small>
+        </div>
+        <div class="card">
+          <h3>Reporting costs</h3>
+          <p style="color:#94a3b8;">
+            Historic SME cost to produce a GRI report: <strong>€15–25k</strong>. EU is rolling out simplified SME standards.
+          </p>
+          <small style="color:#64748b;">Sources: EFRAG (VSME CBA); EC simplification.</small>
+        </div>
+      </div>
+      <p style="color:#94a3b8;margin-top:10px;font-size:14px;">Figures vary by sector & country; CBAM example is illustrative (quantity × embedded emissions × ETS price).</p>
+    </section>
 
-    <div class="card">
-      <h3>Reporting costs</h3>
-      <p style="color:#94a3b8;">
-        Historic SME cost to produce a GRI report: <strong>€15–25k</strong>.
-        EU is rolling out simplified SME standards.
-      </p>
-      <small style="color:#64748b;">Sources: EFRAG (VSME CBA); EC simplification.</small>
-    </div>
-  </div>
-  <p style="color:#94a3b8;margin-top:10px;font-size:14px;">
-    Figures vary by sector & country; CBAM example is illustrative (quantity × embedded emissions × ETS price).
-  </p>
-</section>
-
-<section id="about">
- 
+    <!-- ABOUT -->
     <section id="about">
       <div class="grid-3">
-        <div class="card">
-          <h3>Energy</h3>
-          <p class="muted">Forecast costs and hedge smarter.</p>
-        </div>
-        <div class="card">
-          <h3>Carbon</h3>
-          <p class="muted">Track & report Scope 1–3 (selected).</p>
-        </div>
-        <div class="card">
-          <h3>Supply Chain</h3>
-          <p class="muted">See supplier impact & risks.</p>
-        </div>
+        <div class="card"><h3>Energy</h3><p class="muted">Forecast costs and hedge smarter.</p></div>
+        <div class="card"><h3>Carbon</h3><p class="muted">Track & report Scope 1–3 (selected).</p></div>
+        <div class="card"><h3>Supply Chain</h3><p class="muted">See supplier impact & risks.</p></div>
       </div>
     </section>
 
@@ -144,53 +123,50 @@ color:#a7f3d0; font-weight:700; }
         </div>
       </div>
     </section>
+
+    <!-- TEAM -->
+    <section id="team" class="panel" style="margin-top:32px;">
+      <h2>Team</h2>
+      <div class="grid-3" style="grid-template-columns:repeat(2,1fr); gap:16px; margin-top:12px;">
+
+        <!-- Person 1 -->
+        <div class="card" style="display:flex; gap:14px; align-items:flex-start;">
+          <img src="mufaddal.png" alt="Mufaddal Kapasi"
+               style="width:60px;height:60px;border-radius:50%;object-fit:cover;border:1px solid #1f2937;">
+          <div>
+            <div class="name">Mufaddal Kapasi</div>
+            <div class="role">Co‑Founder</div>
+            <p style="color:#94a3b8;">
+              5+ years in renewable energy forecasting & analysis. MSc Renewable Energy (AT). Ex‑NIWE, UNIDO & AIT. Vienna‑based.
+            </p>
+          </div>
+        </div>
+
+        <!-- Person 2 -->
+        <div class="card" style="display:flex; gap:14px; align-items:flex-start;">
+          <img src="bose.png" alt="Sumantara Bose"
+               style="width:60px;height:60px;border-radius:50%;object-fit:cover;border:1px solid #1f2937;">
+          <div>
+            <div class="name">Sumantara Bose</div>
+            <div class="role">Co‑Founder</div>
+            <p style="color:#94a3b8;">
+              10+ years in renewable project development & execution. MSc Sustainable Energy (TU Delft). Ex‑NIWE, Windcare, RTDT & ANNEA. London‑based.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel" style="margin-top:32px;text-align:center;">
+      <h2>Contact</h2>
+      <a class="btn ghost" href="mailto:kapasi1234@gmail.com">Email us</a>
+    </section>
   </main>
-  <section id="team" class="panel" style="margin-top:32px;">
-  <h2>Team</h2>
-  <div class="grid-3" style="grid-template-columns:repeat(2,1fr); gap:16px; margin-top:12px;">
-    
-    <!-- Person 1 -->
-    <div class="card" style="display:flex; gap:14px; align-items:flex-start;">
-       <div class="avatar">MK</div>
-       <img src="mufaddal.png" alt="Mufaddal Kapasi" 
-       style="width:60px;height:60px;border-radius:50%;object-fit:cover;border:1px solid #1f2937;">
-      <div>
-        <div class="name">Mufaddal Kapasi</div>
-        <div class="role">Co‑Founder</div>
-        <p style="color:#94a3b8;">
-         5+ years in renewable energy, energy
-         forecasting and analysis ·
-         MSc Renewable Energy, Austria
-         Ex-NIWE, UNIDO & Austrian Institute of Technology
-         Based in Vienna.
-        </p>
-        <!-- Optional: <a href="https://www.linkedin.com/in/..." style="color:#a7f3d0;">LinkedIn</a> -->
-      </div>
-    </div>
-
-    <!-- Person 2 -->
-    <div class="card" style="display:flex; gap:14px; align-items:flex-start;">
-      <div class="avatar">SB</div>
-      <img src="bose.png" alt="Sumantara Bose" 
-       style="width:60px;height:60px;border-radius:50%;object-fit:cover;border:1px solid #1f2937;">
-      <div>
-      <div>
-        <div class="name">Sumantara Bose</div>
-        <div class="role">Co‑Founder</div>
-        <p style="color:#94a3b8;">
-          10+ years in renewable energy project development & execution ·
-          MSc Sustainable Energy, TU Delft
-          Ex-NIWE, Windcare, RTDT & ANNEA ·
-          Based in London
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
 
   <footer>
-    © 2025 Cleteco Energy · <a href="mailto:kapasi1234@gmail.com" style="color:#a7f3d0;text-decoration:none;">hello@cleteco.energy</a>
+    © 2025 Cleteco Energy · <a href="mailto:kapasi1234@gmail.com" style="color:#a7f3d0;text-decoration:none;">kapasi1234@gmail.com</a>
   </footer>
 </body>
 </html>
